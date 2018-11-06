@@ -1,0 +1,35 @@
+@import "_reset";
+
+@import "_fonts";
+@import "_variables";
+@import "_animations";
+
+@import "_navigation";
+@import "_gallery";
+
+.main-content {
+    &.flex {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.section {
+    height: 700px;
+    height: 100vh;
+    &.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.page-title {
+    font-size: 80px;
+    height: 77px;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,66 @@
+@import "../../node_modules/@material/animation/variables";
+
+.fade-in {
+    animation: fade-in 2s $mdc-animation-standard-curve-timing-function;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+   
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .black-blur {
+    animation: black-blur 3s $mdc-animation-standard-curve-timing-function;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes black-blur {
+    from { 
+        opacity: 0;
+        text-shadow: 0 0 72px black;
+        color: transparent;
+    }
+
+    to { 
+        opacity: 1;
+        text-shadow: 0;
+        color: black;
+    }
+  }
+
+  .text-slide-up {
+    animation: text-slide-up 2s $mdc-animation-standard-curve-timing-function;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes text-slide-up {
+    from { 
+        padding-top: 100px;
+    }
+
+    to { 
+        padding-top: 0;
+    }
+  }
+
+  .gallery-scroll {
+    animation: gallery-scroll 420s linear;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes gallery-scroll {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-7030px);
+    }
+  }

@@ -1,0 +1,47 @@
+.gallery-header {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100vh;
+    .row {
+        display: flex;
+        .col {
+            width: 49.23875%;
+            img {box-sizing: border-box;}
+        }
+        &:nth-child(2n) {
+            margin-bottom: 6.34516%;
+            .col-1 {
+                order: 2;
+                width: 42.89359%;
+            }
+            .col-2 {
+                order: 1;
+                width: 49.23875%;
+                margin-left: 12.88651%;
+                img {padding: 17%;}
+            }
+        }
+        &:nth-child(2n+1) {
+            margin-bottom: 11.1678%;
+            .col-1 img {
+                padding: 10%;
+                animation-delay: .15s
+            }
+            .col-2 img {
+                padding: 4%;
+                animation-delay: .3s
+            }
+        }
+    }
+    
+}
+
+.gallery-img {
+    width:  100%;
+}
